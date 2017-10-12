@@ -23,12 +23,12 @@ public class ThreadPoolApp {
         } catch (NumberFormatException e) {
             ThreadPoolApp.error();
         }
+    }
 
-
-        private static void error() {
-            System.out.println("ThreadPoolApp must be run with two positive valued " +
+    private static void error(){
+        System.out.println("ThreadPoolApp must be run with two positive valued " +
             " integer arguments. The first detailing the number of jobs " +
             " the second the number of processing threads in the pool");
-            System.exit(0); // exit program
-        }
+        System.exit(0); // exit program
+    }
 }
